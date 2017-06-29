@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="ParallelSuite" duration-ms="13743" started-at="2017-06-29T15:59:27Z" finished-at="2017-06-29T15:59:41Z">
+    <groups>
+    </groups>
+    <test name="ParallelTest1" duration-ms="9216" started-at="2017-06-29T15:59:27Z" finished-at="2017-06-29T15:59:37Z">
+      <class name="com.selenium.parallel.paralleltest.TestParallel1Test">
+        <test-method status="PASS" signature="initialiseDriver()[pri:0, instance:com.selenium.parallel.paralleltest.TestParallel1Test@26653222]" name="initialiseDriver" is-config="true" duration-ms="4552" started-at="2017-06-29T11:59:27Z" finished-at="2017-06-29T11:59:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseDriver -->
+        <test-method status="PASS" signature="firstTestMethod()[pri:0, instance:com.selenium.parallel.paralleltest.TestParallel1Test@26653222]" name="firstTestMethod" duration-ms="4642" started-at="2017-06-29T11:59:32Z" finished-at="2017-06-29T11:59:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstTestMethod -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.selenium.parallel.paralleltest.TestParallel1Test@26653222]" name="endTest" is-config="true" duration-ms="1" started-at="2017-06-29T11:59:37Z" finished-at="2017-06-29T11:59:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.selenium.parallel.paralleltest.TestParallel1Test -->
+    </test> <!-- ParallelTest1 -->
+    <test name="ParallelTest2" duration-ms="13743" started-at="2017-06-29T15:59:27Z" finished-at="2017-06-29T15:59:41Z">
+      <class name="com.selenium.parallel.paralleltest.TestParallel2Test">
+        <test-method status="PASS" signature="initaliseDriver()[pri:0, instance:com.selenium.parallel.paralleltest.TestParallel2Test@548e7350]" name="initaliseDriver" is-config="true" duration-ms="4536" started-at="2017-06-29T11:59:27Z" finished-at="2017-06-29T11:59:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initaliseDriver -->
+        <test-method status="PASS" signature="testGmail()[pri:0, instance:com.selenium.parallel.paralleltest.TestParallel2Test@548e7350]" name="testGmail" duration-ms="9156" started-at="2017-06-29T11:59:32Z" finished-at="2017-06-29T11:59:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGmail -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.selenium.parallel.paralleltest.TestParallel2Test@548e7350]" name="quitDriver" is-config="true" duration-ms="0" started-at="2017-06-29T11:59:41Z" finished-at="2017-06-29T11:59:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.selenium.parallel.paralleltest.TestParallel2Test -->
+    </test> <!-- ParallelTest2 -->
+  </suite> <!-- ParallelSuite -->
+</testng-results>

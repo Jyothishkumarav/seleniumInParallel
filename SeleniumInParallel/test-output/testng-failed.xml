@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ParallelSuite]">
+  <test name="ParallelTest2(failed)">
+    <classes>
+      <class name="com.selenium.parallel.paralleltest.TestParallel2Test">
+        <methods>
+          <include name="testGmail"/>
+          <include name="initaliseDriver"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.selenium.parallel.paralleltest.TestParallel2Test -->
+    </classes>
+  </test> <!-- ParallelTest2(failed) -->
+</suite> <!-- Failed suite [ParallelSuite] -->
