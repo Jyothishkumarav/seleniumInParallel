@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" name="ParallelSuite" parallel="tests">
+<suite thread-count="2" name="ParallelSuite" parallel="classes">
   <test name="ParallelTest1">
     <classes>
       <class name="com.selenium.parallel.paralleltest.TestParallel1Test"/>
-          </classes>
-  </test> <!-- ParallelTest -->
-  <test name="ParallelTest2">
-    <classes>
-       <class name="com.selenium.parallel.paralleltest.TestParallel2Test"/>
-    </classes>
-  </test> 
+      <class name="com.selenium.parallel.paralleltest.TestParallel2Test"/>
+     </classes>
+  </test>
 </suite> <!-- ParallelSuite -->

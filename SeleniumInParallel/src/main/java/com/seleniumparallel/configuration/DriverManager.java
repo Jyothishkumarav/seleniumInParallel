@@ -4,15 +4,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverManager {
-	
-	private static WebDriver driver;
+
+	private static ThreadLocal<WebDriver> webDriver = new ThreadLocal<WebDriver>();
 
 	public static WebDriver getDriver() {
+		
+		return webDriver.get();
+	}
 
-		System.setProperty("webdriver.gecko.driver",
-				"C:\\geckodriver-v0.16.0-win64\\geckodriver.exe");
-		driver = new FirefoxDriver();
-		return driver;
+	public static void setWebDriver(WebDriver driver) {
+
+		webDriver.set(driver);
 	}
 
 }
