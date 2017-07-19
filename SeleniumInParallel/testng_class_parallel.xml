@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite" parallel="classes">
+  <test name="parallel_class">
+    <classes>
+      <class name="com.test.validatepage.FlighPageTest"/>
+      <class name="com.test.validatepage.HomePageTest"/>
+    </classes>
+  </test> <!-- parallel_class -->
+</suite> <!-- Suite -->
