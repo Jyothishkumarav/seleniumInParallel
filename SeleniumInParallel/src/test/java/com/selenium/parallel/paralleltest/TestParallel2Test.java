@@ -23,7 +23,7 @@ public class TestParallel2Test {
 
 	@BeforeTest
 	public void initaliseDriver() {
-
+		DriverManager.initialiseDriver("chrome");
 		driver = DriverManager.getDriver();
 		if (driver == null) {
 			System.out.println("Driver is Null !!!!!!!!!!!!!!!!!!!!!!!!");

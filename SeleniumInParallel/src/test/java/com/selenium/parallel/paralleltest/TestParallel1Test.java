@@ -19,7 +19,7 @@ public class TestParallel1Test {
 
 	@BeforeTest
 	public void initialiseDriver() {
-
+		DriverManager.initialiseDriver("chrome");
 		driver = DriverManager.getDriver();
 
 	}
