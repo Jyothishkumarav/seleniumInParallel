@@ -14,7 +14,7 @@ public class HomePage extends BasePage {
 	public HomePage(WebDriver driver) {
 		super(driver);
 		waitForPageToLoad();
-		PageFactory.initElements(this.driver, HomePage.class);
+		PageFactory.initElements(this.driver, this);
 	}
 
 	@FindBy(how = How.PARTIAL_LINK_TEXT, using = "Flights")
@@ -31,6 +31,7 @@ public class HomePage extends BasePage {
 		boolean isLinkdiplayed = flightsLink.isDisplayed()
 				&& hotelLink.isDisplayed() && toursLink.isDisplayed()
 				&& offersLink.isDisplayed();
+		Assert.assertEquals(true, isLinkdiplayed);
 		return isLinkdiplayed;
 	}
 

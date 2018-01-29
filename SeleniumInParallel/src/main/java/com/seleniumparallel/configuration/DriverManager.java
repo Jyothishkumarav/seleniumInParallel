@@ -12,9 +12,15 @@ public class DriverManager {
 		return webDriver.get();
 	}
 
-	public static void setWebDriver(WebDriver driver) {
+	private static void setWebDriver(WebDriver driver) {
 
 		webDriver.set(driver);
+	}
+	
+	public static void initialiseDriver(String browserName){
+		
+		setWebDriver(DriverFactory.createDriverInstance(browserName));
+		
 	}
 
 }

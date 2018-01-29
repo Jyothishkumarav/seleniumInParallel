@@ -1,25 +1,39 @@
 package com.test.validatepage;
 
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
 
+import com.test.page.HomePage;
 import com.test.testsetup.TestBase;
 
 public class HomePageTest extends TestBase {
 	
+	HomePage homePage ;
+	
   @Test
   public void linkDisplayTest() {
-	  System.out.println("Test in Linked Display Test :" + Thread.currentThread().getId());
+	  
+	  homePage.isLinksDisplayed();
   }
   @Test
   public void hotelLinkNavigationTest() {
-	  System.out.println("Test in Linked Hotel  Test :" + Thread.currentThread().getId());
+	 
+	  homePage.navigateHotelHome();
   }
  
   @Test
   public void flightLinkNavigationTest() {
-	  System.out.println("Test in Linked Flight Test :" + Thread.currentThread().getId());
+	  
+	  homePage.navigateToFlightsPage();
+  }
+  
+  @BeforeClass
+  public void setHomePage(){
+	  
+	  homePage = new HomePage(driver);
+	  
   }
   
 }

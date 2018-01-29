@@ -13,7 +13,7 @@ public class HotelsHomePage extends BasePage {
 	public HotelsHomePage(WebDriver driver) {
 
 		super(driver);
-		PageFactory.initElements(this.driver, HotelsHomePage.class);
+		PageFactory.initElements(this.driver, this);
 	}
 	
 	@FindBy(how = How.CSS, using = ".select2-chosen")

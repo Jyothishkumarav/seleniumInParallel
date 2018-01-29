@@ -51,7 +51,7 @@ public class TestParallel1Test {
 
 	@AfterClass
 	public void endTest() {
-		//driver.quit();
-		// driver.close();
+		driver.quit();
+		driver.close();
 	}
 }

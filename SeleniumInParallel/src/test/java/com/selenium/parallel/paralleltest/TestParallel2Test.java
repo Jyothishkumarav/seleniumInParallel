@@ -33,8 +33,8 @@ public class TestParallel2Test {
 
 	@AfterTest
 	public void quitDriver() {
-
-		// driver.close();
+		driver.quit();
+		 driver.close();
 
 	}
 
